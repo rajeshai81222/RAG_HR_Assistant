@@ -1,0 +1,23 @@
+[project]
+name = "rag-hr-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rajesh Venkatesan", email = "rajeshetl78456@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "gradio>=6.28.0",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-openai>=1.6.2",
+    "pypdf>=6.19.0",
+]
+
+[project.scripts]
+rag-hr-assistant = "rag_hr_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
